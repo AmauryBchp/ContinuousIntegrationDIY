@@ -2,7 +2,6 @@
 
 # block master commit
 branch="$(git rev-parse --abbrev-ref HEAD)"
-echo "You can't commit directly to master branch"
 
 if [ "$branch" = "master" ]; then
   echo "You can't commit directly to master branch"
@@ -11,7 +10,7 @@ fi
 
 # prettify
 FILES=$(git diff --cached --name-only --diff-filter=ACMR "*.js" "*.jsx" | sed 's| |\\ |g')
-[ -z "$FILES" ] && exit 0
+[ -z "$FILES" ]
 
 # Prettify all selected files
 echo "$FILES" | xargs ./node_modules/.bin/prettier --write
