@@ -16,7 +16,7 @@ namespace Tests
         {
             var consoleOutput = new StringBuilder();
             Console.SetOut(new StringWriter(consoleOutput));
-            // hello
+
             Program.Main();
 
             Assert.AreEqual(
