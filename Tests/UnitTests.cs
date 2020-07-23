@@ -21,7 +21,7 @@ namespace Tests
 
             Assert.AreEqual(
                 "Version : " + Assembly.GetAssembly(typeof(Program))?.GetName().Version + Environment.NewLine +
-                "Hello World!" + Environment.NewLine,
+                "Hello World! " + Environment.NewLine,
                 consoleOutput.ToString());
         }
     }
