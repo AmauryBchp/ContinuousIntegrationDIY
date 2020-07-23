@@ -4,5 +4,5 @@ cd "${0%/*}/.."
 echo "Running tests"
 echo "............................" 
 
-echo "yolo!" && exit 0
-# echo "Failed!" && exit 1
+#echo "yolo!" && exit 0
+echo "Failed!" && exit 1
